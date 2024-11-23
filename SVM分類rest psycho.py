@@ -6,18 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.signal as signal
 from scipy.signal import welch
-"""
-i =9
-datatype = "FR2"
-serial_number = f"{str(i).zfill(2)}"
-main_directory = "C:\\Jack\\Rppg_acquire_8.18\\The-rPPG-Acquiring-System-main\\TriAnswer_Records(processed)"
-sub_directory = datatype + "_process"
-file_path = os.path.join(main_directory, sub_directory, serial_number + "_PPG.csv")
-ppg_dataframe = pd.read_csv(file_path)
 
-ppg_first_rest      = ppg_dataframe["First_rest"].to_numpy()
-plt.plot(ppg_first_rest[1000:1200])
-"""
 
 def Retrieve_tester_list():
     # 生成範圍1到15的數字，排除7和10
